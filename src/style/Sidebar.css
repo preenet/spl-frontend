@@ -1,0 +1,52 @@
+/* Fixed sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;          /* full screen height */
+  background-color: #3A6EA5;
+  overflow-y: auto;       /* scroll sidebar itself if menu too long */
+  z-index: 1000;
+}
+
+.sidebar-link {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: block;
+  transition: background 0.2s;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile hamburger */
+.fab-toggle {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  z-index: 1100;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: #3A6EA5;
+  border: none;
+  color: white;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Offcanvas styling */
+.offcanvas-menu .offcanvas-header {
+  background: #2f5986;
+  color: white;
+}
+.offcanvas-menu .offcanvas-body {
+  background: #3A6EA5;
+  color: white;
+}
